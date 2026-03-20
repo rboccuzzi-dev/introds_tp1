@@ -80,7 +80,7 @@ buscar_padron() {
 }
 
 while true; do
-    echo
+    echo "====== MENU ======"
     echo "1) Crear entorno"
     echo "2) Correr proceso"
     echo "3) Mostrar alumnos ordenados por padrón"
