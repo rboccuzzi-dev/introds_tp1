@@ -1,5 +1,11 @@
 # TP 1 IDS
 
+### Integrantes:
+- Matias Jun
+- Ian Camacho
+- Javier Aguirre
+- Boccuzzi Ramiro
+
 ### Consigna
 - opción 1) Crear entorno. Consiste en la creación de un directorio dentro del “home” que se
 llame “EPNro1”, dentro de este directorio deberán existir dos carpetas, una llamada
