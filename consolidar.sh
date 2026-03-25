@@ -1,19 +1,12 @@
 #!/bin/bash
 
-BASE="$HOME/FIUBA/TP1-BASH/EPNro1"
-ENTRADA="$BASE/entrada"
-SALIDA="$BASE/salida"
-PROCESADO="$BASE/procesado"
+# $FILENAME viene de variable de entorno de menu.sh
 
-ARCHIVO_SALIDA="$SALIDA/$FILENAME.txt"
+touch ~/EPNro1/salida/$FILENAME.txt
 
-touch "$ARCHIVO_SALIDA"
-
-while true; do
-    for archivo in "$ENTRADA"/*.txt; do
-        [ -e "$archivo" ] || continue
-        cat "$archivo" >> "$ARCHIVO_SALIDA"
-        mv "$archivo" "$PROCESADO/"
-    done
-    sleep 3
+for file in ~/EPNro1/entrada/*.txt ; do
+    if [ -e "$file" ]; then
+        cat $file >> ~/EPNro1/salida/$FILENAME.txt
+        mv $file ~/EPNro1/procesado/
+    fi
 done
